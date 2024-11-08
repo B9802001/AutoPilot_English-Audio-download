@@ -15,7 +15,7 @@ try:
     # 找到輸入欄位，輸入網址
     input_field = driver.find_element(By.ID, "video")  # 假設欄位ID是"input"，請確認實際的ID
     input_field.send_keys(youtube_url)
-    print("網址已輸入")
+    print("網址已經輸入")
 
     # 模擬按下 "Convert" 按鈕
     convert_button = driver.find_element(By.XPATH, "//button[@type='submit']")  # 使用XPath來定位提交按鈕
@@ -41,5 +41,6 @@ except Exception as e:
 
 # 關閉瀏覽器
 finally:
+    print("等待20秒")
     time.sleep(20)
     driver.quit()
