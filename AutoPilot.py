@@ -41,6 +41,6 @@ except Exception as e:
 
 # 關閉瀏覽器
 finally:
-    print("等待20秒")
+    print("等待20秒後關閉")
     time.sleep(20)
     driver.quit()
